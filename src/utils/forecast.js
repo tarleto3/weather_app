@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
             // console.log(chalk.green(response.body.daily.data[0].summary + ' It is currently ' + currentWeather.temperature + ' out. There is a ' + currentWeather.precipProbability + '% chance of rain.'))
 
             callback(undefined, 
-                body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + '°F' + ' out. There is a ' + body.currently.precipProbability + '% chance of rain.' + ' The High for today is ' + body.daily.data[0].temperatureHigh + ' °F.' + ' The Low for today is ' + body.daily.data[0].temperatureLow + ' °F. ')
+                body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' °F' + ' out. There is a ' + body.currently.precipProbability + '% chance of rain.' + ' The High for today is ' + body.daily.data[0].temperatureHigh + ' °F.' + ' The Low for today is ' + body.daily.data[0].temperatureLow + ' °F. ')
         }
 
 
